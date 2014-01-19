@@ -8,7 +8,7 @@ body {
 	background-size: cover;
 	text-align: center;
 	padding: 100px 0;
-	height: 550px;
+	height: 500px;
 }
 
 .full-width-image-2 {
@@ -16,7 +16,7 @@ body {
 /*url(http://lorempixel.com/g/1920/450/) no-repeat center center;*/
 	background-size: cover;
 	text-align: center;
-	height: 500px;
+	height: 450px;
 }
 
 .logo-wrapper {
