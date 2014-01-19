@@ -3,19 +3,20 @@ body {
 }
 
 .full-width-image-1 {
-	background: url(images/edmtopstrip.png) no-repeat center center;
+	background: url(../images/edmtopstrip.png) no-repeat center center;
 /*url(http://lorempixel.com/g/1920/500/) no-repeat center center;*/
 	background-size: cover;
 	text-align: center;
 	padding: 100px 0;
+	height: 550px;
 }
 
 .full-width-image-2 {
-	background: url(images/edmbottomstrip.png) no-repeat center center;
+	background: url(../images/edmbottomstrip.png) no-repeat center center;
 /*url(http://lorempixel.com/g/1920/450/) no-repeat center center;*/
 	background-size: cover;
 	text-align: center;
-	height: 450px;
+	height: 500px;
 }
 
 .logo-wrapper {
