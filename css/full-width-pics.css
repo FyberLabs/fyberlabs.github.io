@@ -7,8 +7,8 @@ body {
 /*url(http://lorempixel.com/g/1920/500/) no-repeat center center;*/
 	background-size: cover;
 	text-align: center;
-	padding: 100px 0;
-	height: 500px;
+/*	padding: 100px 0;*/
+	height: 420px;
 }
 
 .full-width-image-2 {
@@ -16,7 +16,7 @@ body {
 /*url(http://lorempixel.com/g/1920/450/) no-repeat center center;*/
 	background-size: cover;
 	text-align: center;
-	height: 450px;
+	height: 400px;
 }
 
 .logo-wrapper {
