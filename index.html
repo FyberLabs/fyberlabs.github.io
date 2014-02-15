@@ -65,6 +65,9 @@
                 <h1 class="section-heading">Fyber Labs Developer Home</h1>
                 <p class="lead section-lead">This page provides links to learn about and join Fyber Labs development team.</p>
                 <p class="section-paragraph">Fyber Labs is setting out to make a fully open source hardware company.  We will release all hardware designs and software we develop.  Our goal is to fundamentally change how people experience the world.  To build user trust we want to be open and provide the best possible security and oversight of our products through being open.</p>
+                <p class="section-paragraph">Our initial hardware product lines are Social Light and BodyBots.  
+                     Support mobile and web software will allow our users to connect with other social networks and help
+                     users maintain a chosen level of privacy.  Our main web service software SociACL provides the glue.</p>
             </div>
         </div>
     </div>
@@ -78,9 +81,139 @@
         <div class="row">
             <div class="col-lg-12 section">
                 <h1 class="section-heading">About Fyber Labs Development</h1>
-                <p class="lead section-lead">Get to know our team and process</p>
-                <p class="section-paragraph">We will be releasing our hardware requirements, layout rules, tool recommendations, test processes, software stack, and development tool chains.  Stay Tuned!</p>
-                <p class="section-paragraph">Please use the top navigation for more information.</p>
+                <p class="lead section-lead">Our teams and process</p>
+                <p class="section-lead">Teams:</p>
+                <p class="section-paragraph">
+                     <dl class="dl-horizontal">
+                            <dt>Design Team</dt>
+                                 <dd>Responsible for application, demonstrations, and modeling of the hardware</dd>
+                            <dt>Hardware Team</dt>
+                                 <dd>Designs circuit boards, embedded software, manufacturing, and testing</dd>
+                            <dt>Software Team</dt>
+                                 <dd>SociACL web service, s3r.ch web platform, mobile applications, and operations</dd>
+                     </dl>
+                </p>
+                <p class="section-paragraph">Feel free to join our Google group - <a href="https://groups.google.com/d/forum/fyberlabs">https://groups.google.com/d/forum/fyberlabs to learn more about what is going on.</a>
+
+                <p class="section-lead">Process:</p>
+                <p class="section-paragraph">Hardware Tools:
+                     <ul>
+                            <li><a href="http://www.diptrace.com/">Diptrace</a> for EDA development - the free version is not for profit, but its license options are very affordable.</li>
+                            <li>SMD over through-hole with reflow soldering</li>
+                            <li>0402 size SMD components are typical in reference designs, but we prefer 0603 if possible for homebrew reflows.</li>
+                     </ul>
+                     For more information on specific tools Chris Hamilton is using for hardware prototyping, 
+                     check out his <a href="blog.ambiguous.net">blog</a>.</p>
+                <p class="section-paragraph">Selected Components</p>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                             <tr>
+                                 <th>Component</th>
+                                 <th>Description</th>
+                                 <th>Datasheet</th>
+                                 <th>Reference BOM</th>
+                                 <th>Reference Schematic</th>
+                                 <th>Dev Env</th>
+                                 <th>Dev Kit</th>
+                             </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                 <td><a href="http://octopart.com/partsearch#!?q=nRF51822-QFAA&start=0&limit=10">nRF51822-QFAA</a></td>
+                                 <td>ARM based BLE Wireless MCU</td>
+                                 <td><a href="http://www.semiconductorstore.com/pages/asp/DownloadDirect.asp?sid=1392427364231">Datasheet</a></td>
+                                 <td><a href="">BOM</a></td>
+                                 <td><a href="">Schematic</a></td>
+                                 <td><a href="">(Not publicly available without Dev Kit)</a></td>
+                                 <td><a href="http://octopart.com/partsearch#!?q=NRF51822-DK&start=0&limit=10">NRF51822-DK</a></td>
+                             </tr>
+                             <tr>
+                                 <td><a href="http://octopart.com/partsearch#!?q=JN5168&start=0&limit=10">JN5168</a></td>
+                                 <td>MIPS based 802.15.4 6loWPAN Wireless MCU</td>
+                                 <td><a href="http://datasheet.octopart.com/JN5168-001%2C518-NXP-Semiconductors-datasheet-16646088.pdf">Datasheet</a></td>
+                                 <td><a href="">BOM</a></td>
+                                 <td><a href="">Schematic</a></td>
+                                 <td><a href="">Dev Env</a></td>
+                                 <td><a href="">Dev Kit</a></td>
+                             </tr>
+                             <tr>
+                                 <td><a href="">MK20DX128VFM5</a></td>
+                                 <td>ARM Cortex-M4 with USB On-the-Go controller</td>
+                                 <td><a href="http://datasheet.octopart.com/MK20DX128VFM5-Freescale-Semiconductor-datasheet-11535761.pdf">Datasheet</a></td>
+                                 <td><a href="">BOM</a></td>
+                                 <td><a href="">Schematic</a></td>
+                                 <td><a href="">Dev Env</a></td>
+                                 <td><a href="">Dev Kit</a></td>
+                             </tr>
+                             <tr>
+                                 <td><a href="http://octopart.com/partsearch#!?q=STM32F415RGT6&start=0&limit=10">STM32F415RGT6</a></td>
+                                 <td>Espruino capable ARM processor</td>
+                                 <td><a href="http://datasheet.octopart.com/STM32F415RGT6-STMicroelectronics-datasheet-12514404.pdf">Datasheet</a></td>
+                                 <td><a href="">BOM</a></td>
+                                 <td><a href="">Schematic</a></td>
+                                 <td><a href="">Dev Env</a></td>
+                                 <td><a href="">Dev Kit</a></td>
+                             </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="section-paragraph">Embedded Development:
+                <ul class="list-unstyled">
+                    <li>GCC based ARM/MIPS tool chains,</li>
+                    <li><a href="http://www.espruino.com/">Espruino</a> based Javascript for user hacking.</li>
+                </ul>
+                </p>
+
+                <p class="section-paragraph">3D Modeling Tools:
+                <ul class="list-unstyled">
+                    <li>STEP files for all models including EDA modeling,</li>
+                    <li>STL for 3D printing.</li>
+                    <li>(<a href="http://www.freecadweb.org/">FreeCAD</a> supports both formats.)</li>
+                </ul>
+                </p>
+                <p class="section-paragraph">Web:
+                    Javascript</p>
+                <dl class="dl-horizontal">
+                    <dt><a href="http://nodejs.org/">Node.js</a></dt>
+                    <dd>REST API</dd>
+                    <dt><a href="http://angularjs.org/">Angular.js</a> and <a href="http://yeoman.io/">Yeoman</a></dt>
+                    <dd>For testing and browser based frontends</dd>
+                </dl>
+                </p>
+                <p class="section-paragraph">Storage:
+                <dl class="dl-horizontal">
+                    <dt><a href="http://www.postgresql.org/">PostgreSQL</a></dt>
+                    <dd>Relational Storage</dd>
+                    <dt><a href="http://www.mongodb.org/">MongoDB</a></dt>
+                    <dd>Interactive Storage</dd>
+                </dl>
+                </p>
+                <p class="section-paragraph">Development Environments:
+                <dl class="dl-horizontal">
+                    <dt>Xcode</dt>
+                    <dd>iPhone</dd>
+                    <dt>Eclipse</dt>
+                    <dd>Android and Embedded</dd>
+                    <dt>VS2013</dt>
+                    <dd>Windows Phone</dd>
+                </dl>
+                </p>
+                <p class="section-paragraph">Operations/Testing:
+                <dl class="dl-horizontal">
+                    <dt>Vagrant</dt>
+                    <dd>Consistent Environment Creation</dd>
+                    <dt>Chef</dt>
+                    <dd>Automated Environment Deployment</dd>
+                    <dt>Jenkins</dt>
+                    <dd>Continuous Integration/Deployment</dd>
+                    <dt>Git</dt>
+                    <dd>Public and Private Project Repositories</dd>
+                </dl>
+                </p>
+
+                <p class="section-paragraph">Please use the top navigation for more information about Fyber Labs.</p>
             </div>
         </div>
     </div>
